@@ -1,0 +1,84 @@
+/* Reset et styles globaux */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F7F9FC;
+  color: #1A1A1A;
+  line-height: 1.6;
+}
+
+/* Variables CSS pour les couleurs */
+:root {
+  --bg-light: #F7F9FC;
+  --card-bg: #FFFFFF;
+  --primary-blue: #2F80ED;
+  --primary-blue-dark: #1C64D1;
+  --text-primary: #1A1A1A;
+  --text-secondary: #6B7280;
+  --blue-soft: #A0C4FF;
+  --success-color: #219653;
+  --error-color: #EB5757;
+  --border-color: #E5E7EB;
+}
+
+/* Styles pour les cards */
+.card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+/* Styles pour les boutons primaires */
+.btn-primary {
+  background-color: var(--primary-blue) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-blue-dark) !important;
+}
+
+/* Styles pour les montants positifs et négatifs */
+.amount-positive {
+  color: var(--success-color);
+  font-weight: 600;
+}
+
+.amount-negative {
+  color: var(--error-color);
+  font-weight: 600;
+}
+
+/* Utilities */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.mb-0 { margin-bottom: 0 !important; }
+.mb-1 { margin-bottom: 8px !important; }
+.mb-2 { margin-bottom: 16px !important; }
+.mb-3 { margin-bottom: 24px !important; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .card {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+}
